@@ -1,4 +1,5 @@
 from random import randint
+from time import sleep
 print('{:=^50}'.format(' JO KEN PO '))
 
 itens = ('Papel', 'Pedra', 'Tesoura')
@@ -9,8 +10,14 @@ print("""Escolha suas opções
 [2]TESOURA""")
 escolha = int(input('Qual a sua escolha?'))
 
+print('JO')
+sleep(1)
+print('KEN')
+sleep(1)
+print('PO!!!')
+sleep(0.6)
 print('-=' * 20)
-print('O jogador jogou {}'.format(itens[escolha]))
+print('Voce jogou {}'.format(itens[escolha]))
 print('O computador jogou {}'.format(itens[computador]))
 print('-=' * 20)
 
@@ -33,7 +40,7 @@ elif computador == 1:
     else:
         print('jogada invalida')
 elif computador == 2:
-    if escolha == 1:
+    if escolha == 0:
         print('VOCE PERDEU')
     elif escolha == 1:
         print('VOCE GANHOU')
