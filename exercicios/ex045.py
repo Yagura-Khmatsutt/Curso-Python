@@ -9,6 +9,8 @@ print("""Escolha suas opções
 [2]TESOURA""")
 escolha = int(input('Qual a sua escolha?'))
 
+print('-=' * 20)
 print('O jogador jogou {}'.format(itens[escolha]))
 print('O computador jogou {}'.format(itens[computador]))
+print('-=' * 20)
 
