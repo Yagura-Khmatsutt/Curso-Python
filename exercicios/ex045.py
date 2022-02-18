@@ -9,5 +9,6 @@ print("""Escolha suas opções
 [2]TESOURA""")
 escolha = int(input('Qual a sua escolha?'))
 
-print('O jogador jogou {}'.format(escolha))
-print('O computador jogou {}'.format(computador))
+print('O jogador jogou {}'.format(itens[escolha]))
+print('O computador jogou {}'.format(itens[computador]))
+
