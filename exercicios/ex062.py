@@ -10,4 +10,6 @@ while cont <= 10:
     print('{} ->'.format(ter), end='')
     ter += razao
     cont += 1
-print('FIM')
+print('STOP!')
+
+plus = int(input('Quantos termos você quer mostrar?'))
