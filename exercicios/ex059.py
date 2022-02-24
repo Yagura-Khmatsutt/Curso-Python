@@ -18,13 +18,22 @@ while opçao != 5:
     elif opçao == 2:
         mult = num1 * num2
         print('O valor é {}'.format(mult))
-    elif opcao == 3:
+    elif opçao == 3:
+        if num1 > num2:
+            maior = num1
+        else:
+            maior = num2
+        print('Entre os valore {} e {} é {}'.format(num1, num2, maior))
 
-    elif opcao == 4:
+    elif opçao == 4:
+        print('Escreva um novo numero')
+        um1 = int(input('Dígite um valor inteiro:'))
+        num2 = int(input('Digite um valor inteiro:'))
 
-    elif opcao == 5:
+    elif opçao == 5:
+        print('finalizando')
 
     else:
         print('Dígite outro número')
 
-    print('Fim do programa')
+print('Fim do programa')
