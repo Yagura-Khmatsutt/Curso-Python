@@ -8,4 +8,5 @@ print('Voce consegue acertar?')
 acertou = False
 
 while not acertou:
+    num = int(input('Qual é o seu palpite?'))
     
