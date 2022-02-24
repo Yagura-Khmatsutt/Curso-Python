@@ -5,9 +5,10 @@ razao = int(input('Razão'))
 
 ter = primeiroTermo
 cont = 1
-
+tot = 0
+plus = 10
 while plus != 0:
-    while cont <= 10:
+    while cont <= tot:
         print('{} ->'.format(ter), end='')
         ter += razao
         cont += 1
