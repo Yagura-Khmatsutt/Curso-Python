@@ -8,6 +8,7 @@ cont = 1
 tot = 0
 plus = 10
 while plus != 0:
+    tot = tot + plus
     while cont <= tot:
         print('{} ->'.format(ter), end='')
         ter += razao
@@ -15,4 +16,4 @@ while plus != 0:
     print('STOP!')
 
     plus = int(input('Quantos termos você quer mostrar?'))
-print('FIM!')
+print('FIM!, processo finalizado com {}  termos'.format(tot))
