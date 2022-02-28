@@ -9,3 +9,4 @@ cont = (produto * desconto)
 valorFinal = produto - cont
 print(f'O valor do produto era de {produto:.2f} R$ e após um desconto de 5% passou a valer {valorFinal:.2f} R$.')
 print('FIM!')
+
