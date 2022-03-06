@@ -15,4 +15,5 @@ for c in range(0, 5):
                 lista.insert(pos, num)
                 break
             pos += 1
+print('=' * 30)
 print(f'os valores dígitados {lista}')
