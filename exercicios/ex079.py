@@ -21,3 +21,5 @@ while True:
     if r == 'N':
         break
 print('=' * 45)
+valor.sort()
+print(f'Os valores são {valor}')
