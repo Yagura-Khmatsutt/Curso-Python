@@ -20,7 +20,7 @@ print(f'O maior valor é {mai} na posição', end=' ')
 for i, v in enumerate(valores):
     if v == mai:
         print(f' {i}...')
-print(f'O menor valor é {men}')
+print(f'O menor valor é {men} na posição', end=' ')
 for i, v in enumerate(valores):
     if v == men:
-        print(f'{i}...')
+        print(f'{i}...', end=' ')
