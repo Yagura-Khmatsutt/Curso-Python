@@ -15,7 +15,12 @@ for c in range(0, 5):
         if valores[c] < men:
             men = valores[c]
 print('-=' * 30)
-
 print(f'Os valores dígitados são {valores}')
-print(f'O maior valor é {mai}')
+print(f'O maior valor é {mai} na posição', end=' ')
+for i, v in enumerate(valores):
+    if v == mai:
+        print(f' {i}...')
 print(f'O menor valor é {men}')
+for i, v in enumerate(valores):
+    if v == men:
+        print(f'{i}...')
