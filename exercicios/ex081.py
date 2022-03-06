@@ -12,11 +12,11 @@ while True:
     if n not in valor:
         valor.append(n)
         print('Processando...')
-        #sleep(1)
+        sleep(1)
         print('Valor guardado com sucesso!')
     else:
         print('Processando...')
-        #sleep(1)
+        sleep(1)
         print('Valor duplicado![NÃO SALVO!]')
     r = str(input('Deseja continuar? [S/N]')).upper().strip()
     if r == 'N':
