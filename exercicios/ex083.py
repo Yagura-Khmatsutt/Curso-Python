@@ -4,13 +4,17 @@ Seu aplicativo deverá analisar se a expressão passada está com os parênteses
 '''
 
 expr = (str(input('Dígite a expreção: ')))
-pilh = list()
+pilha = list()
 for simbol in expr:
     if simbol == '(':
-        pilh.append('(')
+        pilha.append('(')
     elif simbol == ')':
-        if len(pilh) > 0:
-            del pilh
+        if len(pilha) > 0:
+            pilha.pop()
         else:
-            pilh.append(')')
+            pilha.append(')')
             break
+if len(pilha) == 0:
+    print('Sua expreção é valida!')
+else:
+    print('Sua expreção não valida')
