@@ -23,7 +23,7 @@ while True:
     if resp == 'N':
         break
 print('-' * 40)
-print('Cod', end='')
+print('Cod ', end='')
 for a in jogador.keys():
     print(f'{a:<15}', end=' ')
 print()
@@ -33,3 +33,15 @@ for j, l in enumerate(time):
         print(f'{str(i):>15}', end=' ')
     print('')
 print('-' * 40)
+while True:
+    print('Coloque 999 para sair')
+    busca = int(input('Deseja verificar qual jogador: '))
+    if busca == 999:
+        break
+    if busca >= len(time):
+        print('Erro, não existe esse jogador!!')
+    else:
+        print(f' -- LEVANTAMENDO DO JOGADO {time[busca]["Nome"]}')
+        for i, n in enumerate(time[busca]['gols']):
+            print(f'No jogo {i} fez {n} gols.')
+print('FIM!!!')
