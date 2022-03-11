@@ -5,8 +5,8 @@ Faça um programa que tenha uma função chamada ficha(), que receba dois parâm
 '''
 
 
-def ficha(n, g):
-
+def ficha(j='<Desconhecido>', g=0):
+    print(f'O jogador {j} fez {g} gols.')
 
 
 
@@ -17,7 +17,7 @@ if gols.isnumeric():
     gols = int(gols)
 else:
     gols = 0
-if nome.strip():
-    ficha()
+if nome.strip() == '':
+    ficha(g=gols)
 else:
-    ficha()
+    ficha(nome, gols)
