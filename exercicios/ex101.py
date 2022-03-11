@@ -18,6 +18,9 @@ def voto(ano):
     if idade > 65:
         return f'Sua idade {idade} o voto é OPCIONAL'
 
+
+
+
+
 anoNasc = int(input('Qual o ano de nascimeto? '))
 print(voto(anoNasc))
-
