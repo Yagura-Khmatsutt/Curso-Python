@@ -15,10 +15,11 @@ c = ('\033[m',          # 0 sem cor
 
 def ajuda(coman):
     title(f'Acessando o manual do comando \'{coman}\'', 4)
-    sleep(1)
     print(c[6], end='')
     help(coman)
     print(c[0], end='')
+    sleep(2)
+
 
 def title(msg, cor=0):
     tam = len(msg) + 5
@@ -27,6 +28,7 @@ def title(msg, cor=0):
     print(f'  {msg}')
     print('~' * tam)
     print(c[0], end='')
+    sleep(1)
 
 
 #Main
