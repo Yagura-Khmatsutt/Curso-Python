@@ -9,15 +9,16 @@ c = ('\033[m',          # 0 sem cor
      '\033[0;30;43m',   # 3 amarelo
      '\033[0;30;44m',   # 4 azul
      '\033[0;30;45m',   # 5 roxo
-     '\033[7;30m',      # 6 branco
+     '\033[7;97m',      # 6 branco
      )
 
 
 def ajuda(coman):
-    print(f'Acessando o manual do comando \'{coman}\'', 2)
+    title(f'Acessando o manual do comando \'{coman}\'', 4)
     sleep(1)
+    print(c[6], end='')
     help(coman)
-
+    print(c[0], end='')
 
 def title(msg, cor=0):
     tam = len(msg) + 5
