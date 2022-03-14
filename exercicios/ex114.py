@@ -7,4 +7,6 @@ import urllib.request
 try:
     site = urllib.request.urlopen('http://www.pudim.com.br')
 except:
-    print('\033[;31;0mDeu ruin! \!-!/')
+    print('\033[031mDeu ruin! \!-!/')
+else:
+    print('BLZ')
