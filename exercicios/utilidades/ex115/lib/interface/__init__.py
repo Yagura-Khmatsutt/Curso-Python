@@ -6,7 +6,7 @@ def leiaInt(msg):
     while True:
         try:
             opc = str(input(msg))
-        except (ValueError, TypeError, InterruptedError):
+        except (ValueError, TypeError):
             print('\033[0;31mErro, dígite novamente...\033[m')
             continue
         except KeyboardInterrupt:
