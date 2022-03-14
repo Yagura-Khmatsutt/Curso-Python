@@ -5,3 +5,4 @@
 
 from utilidades.moedas import ex110
 from utilidades.dados import dado
+print('OK')
