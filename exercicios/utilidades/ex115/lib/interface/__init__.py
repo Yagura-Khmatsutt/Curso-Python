@@ -1,19 +1,19 @@
-def linha(tam=42):
-    return '-' * tam
-
-
 def leiaInt(msg):
+
     while True:
         try:
-            opc = str(input(msg))
+            i = str(input(msg))
         except (ValueError, TypeError):
             print('\033[0;31mErro, dígite novamente...\033[m')
             continue
-        except KeyboardInterrupt:
-            print('\033[31mErro, o usuario cancelou a operação!\033[m')
-            return 0
+        except (KeyboardInterrupt):
+            print('\033[0;31mUsuario cancelou a operação!\033[m')
         else:
-            return opc
+            return i
+
+
+def linha(tam=42):
+    return '-' * tam
 
 
 def head(txt):
@@ -26,8 +26,8 @@ def menu(lista):
     head('MENU PRINCIPAL')
     i = 1
     for item in lista:
-        print(f'{i} >> {item}')
+        print(f'\033[33m{i}\033[m >> \033[34m{item}\033[m')
         i += 1
     print(linha())
-    opção = leiaInt('Sua opção é: ')
+    opção = leiaInt('\033[35mSua opção é:\033[m ')
     return opção

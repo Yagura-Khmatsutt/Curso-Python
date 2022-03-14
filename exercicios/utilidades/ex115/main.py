@@ -1,15 +1,16 @@
 from lib.interface import *
-
+from time import sleep
 
 while True:
-    resp = menu(['Novo cadastro', 'Verificar lista', 'Sair'])
-    if resp == 1:
+    resposta = menu(['Novo cadastro', 'Verificar lista', 'Sair'])
+    if resposta == '1':
         print('Novo cadastro')
-    if resp == 2:
+    if resposta == '2':
         print('Verificar Lista')
-    if resp == 3:
-        print('Encerrando processo... volte sempre!')
+    if resposta == '3':
+        print('\033[32mEncerrando processo...\033[m')
+        sleep(2)
+        print('FIM!')
         break
-    else:
-        print('Erro')
-
+    if resposta > '3':
+        print('\033[031mErro número invalido!\033[m')
