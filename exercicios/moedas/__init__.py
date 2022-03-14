@@ -20,3 +20,15 @@ def metade(preço=0, format=False):
 
 def moeda(preço=0, moeda='R$'):
     return f'{moeda}{preço:.2f}'.replace('.', ',')
+
+
+def resumo(preço=0, taxaA=0, taxaD=0):
+    print('-'*40)
+    print('Preço'.center(30))
+    print('-'*40)
+    print(f'Preço analizado {moeda(preço)}')
+    print('-'*40)
+    print(f'A metade é \t{metade(preço, True)}')
+    print(f'O dobro é \t{dobro(preço, True)}')
+    print(f'Aumentando a {taxaA} resulta em \t{aumentar(preço, taxaA, True)}')
+    print(f'Diminuindo a {taxaD} resulta em \t{diminuir(preço, taxaD, True)}')
