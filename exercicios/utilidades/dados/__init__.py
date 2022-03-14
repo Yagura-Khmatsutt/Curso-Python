@@ -1,6 +1,12 @@
 def leiaMoney(msg):
     valido = False
     while not valido:
-        entrada = strg(input(msg))
+        entrada = str(input(msg)).replace(',', '.')
+        if entrada.isalpha() or entrada.strip() == '':
+            print('valor  invalido!')
+        else:
+            valido = True
+            return float(entrada)
+
 
 
