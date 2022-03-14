@@ -2,7 +2,7 @@
 Adapte o código do desafio #107, criando uma função adicional chamada moeda()
 que consiga mostrar os números como um valor monetário formatado.
 '''
-import moedas
+from exercicios import moedas
 
 p = float(input('Dígite um valor:R$  '))
 print(f'A metade de {moedas.moeda(p)} é {moedas.moeda(moedas.metade(p))}')
