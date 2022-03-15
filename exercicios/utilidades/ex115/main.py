@@ -1,19 +1,18 @@
 from lib.interface import *
-from lib.Arquivo import  *
+from lib.Arquivo import *
 from time import sleep
 
 file = 'Arq.txt'
-if arquivoExiste(file):
-    print('Arquivo encontrado.')
-else:
-    print('Arquivo não encontrado!')
+if not arquivoExiste(file):
+    criarArquivo(file)
 
 while True:
     resposta = menu(['Novo cadastro', 'Verificar lista', 'Sair'])
     if resposta == '1':
-        print('Novo cadastro')
+        #criarNovoCadastro(file)
+
     if resposta == '2':
-        print('Verificar Lista')
+        verLista()
     if resposta == '3':
         print('\033[32mEncerrando processo...\033[m')
         sleep(2)
