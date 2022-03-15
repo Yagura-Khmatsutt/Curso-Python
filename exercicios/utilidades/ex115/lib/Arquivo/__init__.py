@@ -30,7 +30,7 @@ def verLista(file):
         for l in ii:
             dado = l.split(';')
             dado[2] = dado[2].replace('\n', '')
-            print(f'{dado[0]} {dado[1]} {dado[2]}')
+            print(f'{dado[0]:<10}{dado[1]:<3} anos{dado[2]:>10}')
     finally:
         ii.close()
 

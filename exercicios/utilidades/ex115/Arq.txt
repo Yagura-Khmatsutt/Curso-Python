@@ -1,2 +1,2 @@
-Matheus; 17; sla
-Ana; 25; Analista de sistema
+Yagura; 25; Desenvolvedor
+Nix; 25; Analista de Sistema
