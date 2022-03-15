@@ -9,9 +9,9 @@ if not arquivoExiste(file):
 while True:
     resposta = menu(['Novo cadastro', 'Verificar lista', 'Sair'])
     if resposta == '1':
-        nome = str(input('Nome:'))
-        idade = leiaInt('Idade:')
-        prfissão = str(input('Profissão'))
+        nome = str(input('Nome: '))
+        idade = leiaInt('Idade: ')
+        prfissão = str(input('Profissão: '))
         cadastrar(file, nome, idade, prfissão)
 
     if resposta == '2':
