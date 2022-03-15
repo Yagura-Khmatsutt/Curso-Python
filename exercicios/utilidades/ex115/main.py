@@ -9,7 +9,10 @@ if not arquivoExiste(file):
 while True:
     resposta = menu(['Novo cadastro', 'Verificar lista', 'Sair'])
     if resposta == '1':
-        print('Novo cadastro!')
+        nome = str(input('Nome:'))
+        idade = leiaInt('Idade:')
+        prfissão = str(input('Profissão'))
+        cadastrar(file, nome, idade, prfissão)
 
     if resposta == '2':
         verLista(file)

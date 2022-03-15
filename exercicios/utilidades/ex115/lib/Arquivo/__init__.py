@@ -22,9 +22,30 @@ def criarArquivo(file):
 
 def verLista(file):
     try:
-        a = open(file, 'rt')
+        ii = open(file, 'rt')
     except:
         print('\033[33mHouve um erro ao ler o arquivo!\033[m')
     else:
         head('PESSOAS CADASTRADAS!')
-        print(a.readlines())
+        print(ii.readlines())
+    finally:
+        ii.close()
+
+
+def cadastrar(file, nome='Desconhecido', idade=0, profissão='Nula'):
+    try:
+        ii = open(file, 'at+')
+    except:
+        print('\033[33mHouve um erro!\033[m')
+    else:
+        try:
+            print(f'{nome}; {idade}, {profissão}\n')
+        except:
+            print('\033[33mHouve um erro!\033[m')
+        else:
+            print(f'Novo cadastro de {nome} adicionado.')
+        finally:
+            ii.close()
+
+
+
