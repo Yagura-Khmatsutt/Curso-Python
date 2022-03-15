@@ -1,3 +1,5 @@
+from ..interface import *
+
 def arquivoExiste(file):
     try:
         ii = open(file, 'rt')
@@ -23,3 +25,6 @@ def verLista(file):
         a = open(file, 'rt')
     except:
         print('\033[33mHouve um erro ao ler o arquivo!\033[m')
+    else:
+        head('PESSOAS CADASTRADAS!')
+        print(a.readlines())
