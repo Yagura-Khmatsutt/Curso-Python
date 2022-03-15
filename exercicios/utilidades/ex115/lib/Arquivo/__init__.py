@@ -27,7 +27,10 @@ def verLista(file):
         print('\033[33mHouve um erro ao ler o arquivo!\033[m')
     else:
         head('PESSOAS CADASTRADAS!')
-        print(ii.read())
+        for l in ii:
+            dado = l.split(';')
+            dado[2] = dado[2].replace('\n', '')
+            print(f'{dado[0]} {dado[1]} {dado[2]}')
     finally:
         ii.close()
 
