@@ -1,5 +1,12 @@
 from lib.interface import *
+from lib.Arquivo import  *
 from time import sleep
+
+file = 'Arq.txt'
+if arquivoExiste(file):
+    print('Arquivo encontrado.')
+else:
+    print('Arquivo não encontrado!')
 
 while True:
     resposta = menu(['Novo cadastro', 'Verificar lista', 'Sair'])
